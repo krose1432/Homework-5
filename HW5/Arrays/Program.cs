@@ -26,9 +26,19 @@ namespace Arrays
                 AccountBalances[i - 1] = Convert.ToDouble(balance);
 
             }
+            Console.WriteLine("Which account would you like to look at?");
             foreach (string name in names)
             {
                 Console.WriteLine(name);
+            }
+            string response = Console.ReadLine();
+
+            for (int i=0; i < names.Length; i++)
+            {
+                if (response.ToLower() == names[i].ToLower())
+                {
+                    Console.WriteLine(response + " has a balance of " + AccountBalances[i].ToString("C"));
+                }
             }
         }
     }
