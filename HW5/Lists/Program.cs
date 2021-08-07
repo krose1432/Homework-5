@@ -8,8 +8,7 @@ namespace Lists
         static void Main(string[] args)
         {
             List<string> favoriteThings = new List<string>();
-            string[] FavoriteThings = favoriteThings.ToArray();
-           string backwordList = "";
+          
 
 
             Console.WriteLine("What is something that you would like to add to this list of favorite things");
